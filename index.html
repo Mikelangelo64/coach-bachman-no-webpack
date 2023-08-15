@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coach Bachman</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="_container">
+        <div class="header__wrapper">
+          <div class="header__item">
+            <a class="logo-link header__logo" href="#">
+              <span class="logo-link__img"
+                ><img src="assets/img/logo.svg" alt="logo" /></span
+              ><span class="logo-link__list"
+                ><span class="logo-link__item">Handstands</span
+                ><span class="logo-link__item">Flexibility</span
+                ><span class="logo-link__item">Calisthenics</span></span
+              ></a
+            >
+          </div>
+          <div class="header__item">
+            <div class="socials header__socials">
+              <p class="socials__title">contact me</p>
+              <ul class="socials__list">
+                <li>
+                  <a
+                    class="socials__item"
+                    href="#"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src="assets/img/socials/watsapp.svg" alt="watsapp"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="popup popup-video banner__popup"
+        data-popupname="_popup-banner"
+        aria-modal="true"
+        role="dialog"
+      >
+        <div class="popup__overlay"></div>
+        <div class="popup__scroll">
+          <div class="popup__wrapper">
+            <button class="popup__close">
+              <img src="assets/img/popup-close.svg" alt="close" />
+            </button>
+            <div class="popup__content">
+              <div class="popup-video__media">
+                <video
+                  class="video"
+                  disablePictureInPicture
+                  preload="metadata"
+                  playsinline
+                  controls
+                >
+                  <source data-src="assets/video/banner.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="popup popup-common about__popup"
+        data-popupname="_popup-about"
+        aria-modal="true"
+        role="dialog"
+      >
+        <div class="popup__overlay"></div>
+        <div class="popup__scroll">
+          <div class="popup__wrapper">
+            <button class="popup__close">
+              <img src="assets/img/popup-close.svg" alt="close" />
+            </button>
+            <div class="popup__content">
+              <p class="popup__title">popup</p>
+              <p class="popup__subtitle">popup</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="popup popup-feedback thanks__popup"
+        data-popupname="_popup-thanks"
+        aria-modal="true"
+        role="dialog"
+      >
+        <div class="popup__overlay"></div>
+        <div class="popup__scroll">
+          <div class="popup__wrapper">
+            <button class="popup__close">
+              <img src="assets/img/popup-close.svg" alt="close" />
+            </button>
+            <div class="popup__content">
+              <div class="popup__title__container">
+                <div class="popup-feedback__label">
+                  <img src="assets/img/popup-thanks.svg" alt="thank you" />
+                </div>
+                <p class="popup__title">Спасибо!</p>
+              </div>
+              <p class="popup__subtitle">
+                Ваша заявка принята.<br />Ми свяжемся с вами в ближайшее время.
+              </p>
+              <button class="popup__button button-light">
+                <span>Home</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="popup popup-form form__popup"
+        data-popupname="_popup-form"
+        aria-modal="true"
+        role="dialog"
+      >
+        <div class="popup__overlay"></div>
+        <div class="popup__scroll">
+          <div class="popup__wrapper">
+            <button class="popup__close">
+              <img src="assets/img/popup-close.svg" alt="close" />
+            </button>
+            <div class="popup__content">
+              <div class="action">
+                <div class="action__header">
+                  <p class="action__title">One Arm Labs</p>
+                  <p class="action__subtitle">Total Price: €130.00</p>
+                </div>
+                <div class="action__main">
+                  <form class="action-form form" action="post">
+                    <input class="name" type="text" name="name" /><button
+                      type="submit"
+                    >
+                      <span>submit</span>
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="appear" data-include-mobile="include">
+      <div class="appear__wrapper">
+        <div class="appear-hidden">
+          <section class="banner" data-animate="clip-path">
+            <div class="banner-bg">
+              <div class="banner-bg__media">
+                <video
+                  class="video"
+                  disablePictureInPicture
+                  preload="metadata"
+                  playsinline
+                  loop
+                  muted
+                  autoplay
+                >
+                  <source data-src="assets/video/banner.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+            <div class="_container banner__container">
+              <div class="banner__wrapper">
+                <div class="banner__content">
+                  <div class="banner__main">
+                    <h1 class="banner__title">
+                      Learn to one arm handstand become your own hero!
+                    </h1>
+                    <p class="banner__subtitle">
+                      <span>One arm labs</span> is a step by step personal
+                      online program
+                    </p>
+                  </div>
+                  <div class="banner-action">
+                    <p class="banner-action__title">Ready to start?</p>
+                    <button
+                      class="banner-action__button button-light popup-open"
+                      data-popup="_popup-thanks"
+                    >
+                      <span>learn to one arm handstand</span>
+                    </button>
+                  </div>
+                </div>
+                <button
+                  class="banner-play popup-open"
+                  data-popup="_popup-banner"
+                  title="play video"
+                >
+                  <svg
+                    width="215"
+                    height="217"
+                    viewBox="0 0 215 217"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="line-big"
+                      d="M63.8964 174.103C28.7244 148.55 20.87 99.4006 46.3531 64.3261C71.8361 29.2517 121.007 21.5338 156.179 47.0878C164.551 53.1704 171.375 60.5899 176.57 68.8382"
+                      stroke="white"
+                      stroke-opacity="0.3"
+                    />
+                    <path
+                      class="line-small"
+                      d="M96.584 158.585C128.18 166.083 158.907 150.615 165.214 124.035C171.522 97.4556 151.022 69.8302 119.426 62.3321C111.905 60.5473 104.434 60.0638 97.3289 60.7216"
+                      stroke="white"
+                      stroke-opacity="0.3"
+                    />
+                    <path
+                      class="play"
+                      d="M121.508 103.473L100.182 116.738L99.3575 91.637L121.508 103.473Z"
+                      stroke="white"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="appear-shown">
+          <section class="light details">
+            <div class="_container">
+              <div class="details__wrapper">
+                <div class="details__content">
+                  <h2 class="details__title">Programm details</h2>
+                  <ul class="details-list">
+                    <li class="details-list__item">
+                      <h3 class="details-list__title">Customized workouts</h3>
+                      <p class="details-list__description">
+                        From warm up, through prehab, technical training and
+                        conditioning. Everything is customized towards your
+                        current level and needs.
+                      </p>
+                    </li>
+                    <li class="details-list__item">
+                      <h3 class="details-list__title">Flexibility workouts</h3>
+                      <p class="details-list__description">
+                        Improve your specific flexibility in order to take you
+                        to your handstand goals on the fast lane.
+                      </p>
+                    </li>
+                    <li class="details-list__item">
+                      <h3 class="details-list__title">Precise technique</h3>
+                      <p class="details-list__description">
+                        In depth instructions to every single drill will assure
+                        that you have everything you need to perfect your
+                        execution.
+                      </p>
+                    </li>
+                    <li class="details-list__item">
+                      <h3 class="details-list__title">antagonist training</h3>
+                      <p class="details-list__description">
+                        In order to stay healthy and well balanced you also have
+                        to work your pulling muscles with or without equipment.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="details__img">
+                  <div class="details__img__container">
+                    <img
+                      class="details__img__content"
+                      src="assets/img/details.png"
+                      alt="details"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <div class="appear">
+      <div class="appear__wrapper">
+        <div class="appear-hidden">
+          <section class="dark statistic" data-animate="translateY">
+            <div class="marquee outlined reversed">
+              <span class="marquee__item">One goal</span
+              ><span class="marquee__item">One program</span
+              ><span class="marquee__item">One arm</span>
+            </div>
+            <div class="_container">
+              <div class="statistic__wrapper">
+                <div class="statistic__content">
+                  <ul class="statistic-list">
+                    <li class="statistic-list__item">
+                      <div class="statistic-list__img">
+                        <img
+                          src="assets/img/statistic/statistic-1.svg"
+                          alt="statistic-1"
+                        />
+                      </div>
+                      <div class="statistic-list__content">
+                        <p class="statistic-list__value">16</p>
+                        <p class="statistic-list__name">weeks</p>
+                      </div>
+                    </li>
+                    <li class="statistic-list__item">
+                      <div class="statistic-list__img">
+                        <img
+                          src="assets/img/statistic/statistic-2.svg"
+                          alt="statistic-2"
+                        />
+                      </div>
+                      <div class="statistic-list__content">
+                        <p class="statistic-list__value">4</p>
+                        <p class="statistic-list__name">stages</p>
+                      </div>
+                    </li>
+                    <li class="statistic-list__item">
+                      <div class="statistic-list__img">
+                        <img
+                          src="assets/img/statistic/statistic-3.svg"
+                          alt="statistic-3"
+                        />
+                      </div>
+                      <div class="statistic-list__content">
+                        <p class="statistic-list__value">75</p>
+                        <p class="statistic-list__name">workouts</p>
+                      </div>
+                    </li>
+                    <li class="statistic-list__item">
+                      <div class="statistic-list__img">
+                        <img
+                          src="assets/img/statistic/statistic-4.svg"
+                          alt="statistic-4"
+                        />
+                      </div>
+                      <div class="statistic-list__content">
+                        <p class="statistic-list__value">€150</p>
+                        <p class="statistic-list__name">price</p>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="statistic__action">
+                    <button
+                      class="statistic__button button-light popup-open"
+                      data-popup="_popup-thanks"
+                    >
+                      <span>learn to one arm handstand</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="statistic__img">
+                  <div class="statistic__img__container">
+                    <img
+                      class="statistic__img__content"
+                      src="assets/img/statistic/statistic.jpg"
+                      alt="statistic"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="appear-shown">
+          <section class="light training">
+            <div class="_container training__container">
+              <div class="training__wrapper">
+                <div class="training__content">
+                  <h2 class="training__title">How you will be training</h2>
+                  <p class="training__description">
+                    Every workout consists of:
+                  </p>
+                  <ul class="training-list">
+                    <li class="training-list__item">
+                      <span>General Warm Up</span>
+                    </li>
+                    <li class="training-list__item">
+                      <span>Pre Hab &amp; injury Prevention</span>
+                    </li>
+                    <li class="training-list__item">
+                      <span>Base Technique Refinement</span>
+                    </li>
+                    <li class="training-list__item">
+                      <span>Technical training</span>
+                    </li>
+                    <li class="training-list__item">
+                      <span>Conditioning</span>
+                    </li>
+                    <li class="training-list__item">
+                      <span>Post Workout Cool Down</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="training__bg">
+              <img
+                class="training__bg__img"
+                src="assets/img/training.jpg"
+                alt="training"
+              />
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <section class="dark benefits">
+      <div class="marquee outlined benefits__marquee__top">
+        <span class="marquee__item">One goal</span
+        ><span class="marquee__item">One program</span
+        ><span class="marquee__item">One arm</span>
+      </div>
+      <div class="_container benefits__container">
+        <div class="benefits__wrapper">
+          <div class="benefits__item">
+            <div class="benefits__label">
+              <img src="assets/img/benefits/benefits-1.svg" alt="benefits-1" />
+            </div>
+            <p class="benefits__title">Train <br />anywhere</p>
+          </div>
+          <div class="benefits__item">
+            <div class="benefits__label">
+              <img src="assets/img/benefits/benefits-2.svg" alt="benefits-2" />
+            </div>
+            <p class="benefits__title">45-180 min self <br />paced workouts</p>
+          </div>
+          <div class="benefits__item">
+            <div class="benefits__label">
+              <img src="assets/img/benefits/benefits-3.svg" alt="benefits-3" />
+            </div>
+            <p class="benefits__title">Follow alone <br />classes</p>
+          </div>
+        </div>
+      </div>
+      <div class="marquee outlined reversed benefits__marquee__bottom">
+        <span class="marquee__item">One goal</span
+        ><span class="marquee__item">One program</span
+        ><span class="marquee__item">One arm</span>
+      </div>
+    </section>
+
+    <div class="appear special">
+      <div class="appear__wrapper">
+        <div class="appear-hidden">
+          <section class="light whois" data-animate="translateY">
+            <div class="_container whois__container">
+              <div class="whois__wrapper">
+                <div class="whois__content">
+                  <h2 class="whois__title">
+                    Who is <span>coach bachmann</span>
+                  </h2>
+                  <div class="whois__main">
+                    <ul class="whois-list">
+                      <li class="whois-list__item">
+                        <p class="whois-list__value">10+</p>
+                        <p class="whois-list__description">
+                          Years of Coaching Experience
+                        </p>
+                      </li>
+                      <li class="whois-list__item">
+                        <p class="whois-list__value">11</p>
+                        <p class="whois-list__description">
+                          Ground Breaking Onlline Programs
+                        </p>
+                      </li>
+                      <li class="whois-list__item">
+                        <p class="whois-list__value">1000s</p>
+                        <p class="whois-list__description">of Happy Clients</p>
+                      </li>
+                    </ul>
+                    <button
+                      class="whois__button button-dark popup-open"
+                      data-popup="_popup-thanks"
+                    >
+                      <span>learn to one arm handstand</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="whois__bg">
+              <img src="assets/img/whois.jpg" alt="who-is" />
+            </div>
+          </section>
+        </div>
+        <div class="appear-shown">
+          <section class="dark results">
+            <div class="marquee outlined results__marquee__top">
+              <span class="marquee__item">One goal</span
+              ><span class="marquee__item">One program</span
+              ><span class="marquee__item">One arm</span>
+            </div>
+            <div class="_container results__container">
+              <div class="results__wrapper">
+                <div class="results__content">
+                  <h2 class="results__title">Results of my clients</h2>
+                  <div class="results-slider-controls">
+                    <button class="results-slider-prev swiper-button-prev">
+                      <img
+                        src="assets/img/arrow-left.svg"
+                        alt="previous"
+                      /></button
+                    ><button class="results-slider-next">
+                      <img src="assets/img/arrow-right.svg" alt="next" />
+                    </button>
+                  </div>
+                </div>
+                <div class="results-slider swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="results-slider__item">
+                        <div class="results-slider__img">
+                          <div class="results-slider__img__container">
+                            <img
+                              class="results-slider__img__content"
+                              src="assets/img/results/results-1.jpg"
+                              alt="results-1"
+                              loading="lazy"
+                            />
+                          </div>
+                        </div>
+                        <div class="results-slider__title">Martin К.</div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="results-slider__item">
+                        <div class="results-slider__img">
+                          <div class="results-slider__img__container">
+                            <img
+                              class="results-slider__img__content"
+                              src="assets/img/results/results-2.jpg"
+                              alt="results-2"
+                              loading="lazy"
+                            />
+                          </div>
+                        </div>
+                        <div class="results-slider__title">Martin К.</div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="results-slider__item">
+                        <div class="results-slider__img">
+                          <div class="results-slider__img__container">
+                            <img
+                              class="results-slider__img__content"
+                              src="assets/img/results/results-1.jpg"
+                              alt="results-2"
+                              loading="lazy"
+                            />
+                          </div>
+                        </div>
+                        <div class="results-slider__title">Martin К.</div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="results-slider__item">
+                        <div class="results-slider__img">
+                          <div class="results-slider__img__container">
+                            <img
+                              class="results-slider__img__content"
+                              src="assets/img/results/results-2.jpg"
+                              alt="results-3"
+                              loading="lazy"
+                            />
+                          </div>
+                        </div>
+                        <div class="results-slider__title">Martin К.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <div class="appear">
+      <div class="appear__wrapper">
+        <div class="appear-hidden">
+          <section class="light complimentary" data-animate="translateY">
+            <div class="_container">
+              <div class="complimentary__wrapper">
+                <div class="complimentary__header">
+                  <h2 class="complimentary__title">Complimentary content</h2>
+                  <p class="complimentary__description">
+                    Every Handstand Labs athlete receive full complimentary
+                    access to:
+                  </p>
+                </div>
+                <ul class="complimentary-list">
+                  <li class="complimentary-list__item">
+                    <div class="complimentary-list__header">
+                      <div class="complimentary-list__label">
+                        <img
+                          src="assets/img/complimentary/complimentary-1.svg"
+                          alt="complimentary-1"
+                        />
+                      </div>
+                      <h3 class="complimentary-list__title">Knowledge base</h3>
+                    </div>
+                    <p class="complimentary-list__description">
+                      In the exclusive knowledge base you will lean everything
+                      there is to know about technique, training, the do’s and
+                      do not’s.
+                    </p>
+                  </li>
+                  <li class="complimentary-list__item">
+                    <div class="complimentary-list__header">
+                      <div class="complimentary-list__label">
+                        <img
+                          src="assets/img/complimentary/complimentary-2.svg"
+                          alt="complimentary-2"
+                        />
+                      </div>
+                      <h3 class="complimentary-list__title">
+                        Technique school
+                      </h3>
+                    </div>
+                    <p class="complimentary-list__description">
+                      Receive in depth technical break down and analysis of the
+                      most important exercises and their common mistakes and how
+                      these will help you on you journey towards the one arm
+                      handstand
+                    </p>
+                  </li>
+                  <li class="complimentary-list__item">
+                    <div class="complimentary-list__header">
+                      <div class="complimentary-list__label">
+                        <img
+                          src="assets/img/complimentary/complimentary-3.svg"
+                          alt="complimentary-3"
+                        />
+                      </div>
+                      <h3 class="complimentary-list__title">
+                        Membership perks
+                      </h3>
+                    </div>
+                    <p class="complimentary-list__description">
+                      Become a pert og inner circle, get added to the private
+                      Chat to ask questions and connect with like minded
+                      athletes.
+                    </p>
+                  </li>
+                </ul>
+                <div class="complimentary__bottom">
+                  <button
+                    class="complimentary__button button-dark popup-open"
+                    data-popup="_popup-thanks"
+                  >
+                    <span>learn to one arm handstand</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="appear-shown">
+          <footer class="footer">
+            <div class="footer__header">
+              <div class="marquee outlined reversed footer__marquee__outlined">
+                <span class="marquee__item">One goal</span
+                ><span class="marquee__item">One program</span
+                ><span class="marquee__item">One arm</span>
+              </div>
+              <div class="marquee footer__marquee__filled">
+                <span class="marquee__item">One goal</span
+                ><span class="marquee__item">One program</span
+                ><span class="marquee__item">One arm</span>
+              </div>
+            </div>
+            <div class="_container">
+              <div class="footer__wrapper">
+                <a class="logo-link footer__logo" href="#">
+                  <span class="logo-link__img"
+                    ><img src="assets/img/logo-footer.svg" alt="logo" /></span
+                ></a>
+                <div class="footer__content">
+                  <div class="socials footer__socials">
+                    <p class="socials__title">contact me</p>
+                    <ul class="socials__list">
+                      <li>
+                        <a
+                          class="socials__item"
+                          href="#"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <img
+                            src="assets/img/socials/watsapp.svg"
+                            alt="watsapp"
+                        /></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="socials footer__socials">
+                    <p class="socials__title">follow me</p>
+                    <ul class="socials__list">
+                      <li>
+                        <a
+                          class="socials__item"
+                          href="#"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <img
+                            src="assets/img/socials/youtube.svg"
+                            alt="youtube"
+                        /></a>
+                      </li>
+                      <li>
+                        <a
+                          class="socials__item"
+                          href="#"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <img
+                            src="assets/img/socials/instagram.svg"
+                            alt="instagram"
+                        /></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__bottom">
+              <div class="marquee outlined reversed footer__marquee__outlined">
+                <span class="marquee__item">One goal</span
+                ><span class="marquee__item">One program</span
+                ><span class="marquee__item">One arm</span>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/node-marquee@3.0.6/build/cdn/index.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vevet@2.17.0/build/cdn/index.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script src="index.js"></script>
+    <script src="video.js"></script>
+  </body>
+</html>
