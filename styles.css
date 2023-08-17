@@ -2571,7 +2571,7 @@ html:not(.v-mobile) .statistic__img:focus-visible .statistic__img__container {
     top: 0;
     left: 0;
     width: 100%;
-    height: 6.25rem;
+    height: 1.875rem;
     background-image: linear-gradient(180deg, var(--color-grey) 0%, var(--color-grey) 30%, rgba(var(--color-grey--rgb), 0) 100%);
   }
 }
@@ -2698,9 +2698,10 @@ html:not(.v-mobile) .statistic__img:focus-visible .statistic__img__container {
   }
 }
 .training-list {
+  padding-left: 1.25rem;
   list-style-type: disc;
-  list-style-position: inside;
-  font-weight: 600;
+  list-style-position: outside;
+  font-weight: 500;
   line-height: 126%;
 }
 @media (min-width: 900px) {
@@ -2724,7 +2725,8 @@ html:not(.v-mobile) .statistic__img:focus-visible .statistic__img__container {
   }
 }
 .training-list__item span {
-  margin-left: -0.875rem;
+  display: block;
+  margin-left: 0.625rem;
 }
 
 @media (min-width: 1200px) {
@@ -2895,14 +2897,16 @@ html:not(.v-mobile) .statistic__img:focus-visible .statistic__img__container {
   z-index: 0;
   padding: 0;
 }
+.whois__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
 @media (min-width: 900px) {
   .whois__bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    width: 100%;
-    height: 100%;
     max-width: calc(100vw - 36.125rem);
   }
 }
@@ -2918,55 +2922,21 @@ html:not(.v-mobile) .statistic__img:focus-visible .statistic__img__container {
 }
 @media (max-width: 899px) {
   .whois__bg {
-    position: relative;
-    z-index: 0;
-    display: flex;
-    max-width: 50%;
-    width: 100%;
-    margin-top: -21rem;
+    opacity: 0.4;
   }
 }
-@media (max-width: 899px) and (max-width: 550px) {
-  .whois__bg {
-    display: none;
-    max-width: unset;
-    margin-top: 0;
-  }
-}
-@media (max-width: 899px) {
-  .whois__bg::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 6.25rem;
-    background-image: linear-gradient(180deg, var(--color-grey) 0%, var(--color-grey) 30%, rgba(var(--color-grey--rgb), 0) 100%);
-  }
-}
-@media (min-width: 900px) {
-  .whois__bg img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    object-fit: cover;
-  }
+.whois__bg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  object-fit: cover;
 }
 @media (min-width: 900px) and (min-width: 1441px) {
   .whois__bg img {
     object-position: 50% 22%;
-  }
-}
-@media (max-width: 899px) {
-  .whois__bg img {
-    position: relative;
-    z-index: 0;
-    width: 100%;
-    height: auto;
   }
 }
 .whois__container {
