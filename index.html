@@ -12,7 +12,7 @@
       <div class="_container">
         <div class="header__wrapper">
           <div class="header__item">
-            <a class="logo-link header__logo" href="#">
+            <a class="logo-link header__logo" href="/">
               <span class="logo-link__img"
                 ><img src="assets/img/logo.svg" alt="logo" /></span
               ><span class="logo-link__list"
@@ -29,7 +29,7 @@
                 <li>
                   <a
                     class="socials__item"
-                    href="#"
+                    href="https://wa.me/12134257858"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -63,6 +63,37 @@
                   controls
                 >
                   <source data-src="assets/video/banner.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="popup popup-video result-1__popup"
+        data-popupname="_popup-result-1"
+        aria-modal="true"
+        role="dialog"
+      >
+        <div class="popup__overlay"></div>
+        <div class="popup__scroll">
+          <div class="popup__wrapper">
+            <button class="popup__close">
+              <img src="assets/img/popup-close.svg" alt="close" />
+            </button>
+            <div class="popup__content">
+              <div class="popup-video__media">
+                <video
+                  class="video"
+                  disablePictureInPicture
+                  preload="metadata"
+                  playsinline
+                  controls
+                >
+                  <source
+                    data-src="assets/video/result-1.mp4"
+                    type="video/mp4"
+                  />
                 </video>
               </div>
             </div>
@@ -183,12 +214,14 @@
                   </div>
                   <div class="banner-action">
                     <p class="banner-action__title">Ready to start?</p>
-                    <button
-                      class="banner-action__button button-light popup-open"
-                      data-popup="_popup-thanks"
+                    <a
+                      class="banner-action__button button-light"
+                      href="https://courses.coachbachmann.com/checkout/?rid=p1x07N"
+                      target="_blank"
+                      rel="noreferrer"
                     >
-                      <span>Learn to One Arm Handstand</span>
-                    </button>
+                      <span>Learn to One Arm Handstand</span></a
+                    >
                   </div>
                 </div>
                 <button
@@ -344,12 +377,14 @@
                     </li>
                   </ul>
                   <div class="statistic__action">
-                    <button
-                      class="statistic__button button-light popup-open"
-                      data-popup="_popup-thanks"
+                    <a
+                      class="statistic__button button-light"
+                      href="https://courses.coachbachmann.com/checkout/?rid=p1x07N"
+                      target="_blank"
+                      rel="noreferrer"
                     >
-                      <span>Learn to One Arm Handstand</span>
-                    </button>
+                      <span>Learn to One Arm Handstand</span></a
+                    >
                   </div>
                 </div>
                 <div class="statistic__img">
@@ -472,12 +507,14 @@
                         <p class="whois-list__description">of Happy Clients</p>
                       </li>
                     </ul>
-                    <button
-                      class="whois__button button-dark popup-open"
-                      data-popup="_popup-thanks"
+                    <a
+                      class="whois__button button-dark"
+                      href="https://courses.coachbachmann.com/checkout/?rid=p1x07N"
+                      target="_blank"
+                      rel="noreferrer"
                     >
-                      <span>Learn to One Arm Handstand</span>
-                    </button>
+                      <span>Learn to One Arm Handstand</span></a
+                    >
                   </div>
                 </div>
               </div>
@@ -512,64 +549,53 @@
                 <div class="results-slider swiper">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                      <div class="results-slider__item">
-                        <div class="results-slider__img">
-                          <div class="results-slider__img__container">
-                            <img
-                              class="results-slider__img__content"
-                              src="assets/img/results/results-1.jpg"
-                              alt="results-1"
-                              loading="lazy"
-                            />
-                          </div>
-                        </div>
-                        <div class="results-slider__title">Martin К.</div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="results-slider__item">
-                        <div class="results-slider__img">
-                          <div class="results-slider__img__container">
-                            <img
-                              class="results-slider__img__content"
-                              src="assets/img/results/results-2.jpg"
-                              alt="results-2"
-                              loading="lazy"
-                            />
-                          </div>
-                        </div>
-                        <div class="results-slider__title">Martin К.</div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="results-slider__item">
-                        <div class="results-slider__img">
-                          <div class="results-slider__img__container">
-                            <img
-                              class="results-slider__img__content"
-                              src="assets/img/results/results-1.jpg"
-                              alt="results-2"
-                              loading="lazy"
-                            />
-                          </div>
-                        </div>
-                        <div class="results-slider__title">Martin К.</div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="results-slider__item">
-                        <div class="results-slider__img">
-                          <div class="results-slider__img__container">
-                            <img
-                              class="results-slider__img__content"
-                              src="assets/img/results/results-2.jpg"
-                              alt="results-3"
-                              loading="lazy"
-                            />
-                          </div>
-                        </div>
-                        <div class="results-slider__title">Martin К.</div>
-                      </div>
+                      <button
+                        class="results-slider__item popup-open"
+                        data-popup="_popup-result-1"
+                      >
+                        <span class="results-slider__img"
+                          ><span class="results-slider__img__container"
+                            ><video
+                              class="video"
+                              disablePictureInPicture
+                              preload="metadata"
+                              playsinline
+                              loop
+                              muted
+                              autoplay
+                            >
+                              <source
+                                data-src="assets/video/result-1.mp4"
+                                type="video/mp4"
+                              /></video
+                            ><span class="results-slider__play"
+                              ><svg
+                                width="215"
+                                height="217"
+                                viewBox="0 0 215 217"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  class="line-big"
+                                  d="M63.8964 174.103C28.7244 148.55 20.87 99.4006 46.3531 64.3261C71.8361 29.2517 121.007 21.5338 156.179 47.0878C164.551 53.1704 171.375 60.5899 176.57 68.8382"
+                                  stroke="white"
+                                  stroke-opacity="0.3"
+                                />
+                                <path
+                                  class="line-small"
+                                  d="M96.584 158.585C128.18 166.083 158.907 150.615 165.214 124.035C171.522 97.4556 151.022 69.8302 119.426 62.3321C111.905 60.5473 104.434 60.0638 97.3289 60.7216"
+                                  stroke="white"
+                                  stroke-opacity="0.3"
+                                />
+                                <path
+                                  class="play"
+                                  d="M121.508 103.473L100.182 116.738L99.3575 91.637L121.508 103.473Z"
+                                  stroke="white"
+                                  stroke-width="2"
+                                /></svg></span></span></span
+                        ><span class="results-slider__title">Martin К.</span>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -641,18 +667,20 @@
                       </h3>
                     </div>
                     <p class="complimentary-list__description">
-                      Become a part of tehe inner circle, get added to the
+                      Become a part of the inner circle, get added to the
                       private chat and connect with like minded athletes.
                     </p>
                   </li>
                 </ul>
                 <div class="complimentary__bottom">
-                  <button
-                    class="complimentary__button button-dark popup-open"
-                    data-popup="_popup-thanks"
+                  <a
+                    class="complimentary__button button-dark"
+                    href="https://courses.coachbachmann.com/checkout/?rid=p1x07N"
+                    target="_blank"
+                    rel="noreferrer"
                   >
-                    <span>Learn to One Arm Handstand</span>
-                  </button>
+                    <span>Learn to One Arm Handstand</span></a
+                  >
                 </div>
               </div>
             </div>
@@ -685,7 +713,7 @@
                       <li>
                         <a
                           class="socials__item"
-                          href="#"
+                          href="https://wa.me/12134257858"
                           target="_blank"
                           rel="noreferrer"
                         >
@@ -702,7 +730,7 @@
                       <li>
                         <a
                           class="socials__item"
-                          href="#"
+                          href="https://www.youtube.com/@CoachBachmann/?sub_confirmation=1"
                           target="_blank"
                           rel="noreferrer"
                         >
@@ -714,7 +742,7 @@
                       <li>
                         <a
                           class="socials__item"
-                          href="#"
+                          href="https://www.instagram.com/coachbachmann/"
                           target="_blank"
                           rel="noreferrer"
                         >
